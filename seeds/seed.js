@@ -1,13 +1,19 @@
-const sequelize = require("../config/connection");
+const sequelize = require('../config/connection');
+const seedPlayers = require('./playerData.js');
+const seedStaff = require('./staffData');
+
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const rosterData = await rosterData.bulkCreate(rosterData);
 
-  // TODO: SEED DATA WHEN NPM RUN SEED IS CALLED IN TERMINAL
+  await seedPlayer();
 
+  await seedStaff();
+
+
+  
   process.exit(0);
 };
-
+  
 seedDatabase();
