@@ -52,8 +52,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 # Clone this repository
 $ git clone https://github.com/bhodge166/project2.git
 
-# Go into the repository
-$ cd teamlasso
+# Go into the repository (cloning will create a new folder inside the folder you are in so "LS" and see what the name is CD into that file name and then follow remaining instructions.)
+$ cd project2
 
 # Install dependencies
 $ npm install
