@@ -12,6 +12,21 @@ Staff.init(
       autoIncrement: true,
     },
 
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isAlpha: true,
+      },
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isAlpha: true,
+      },
+    },
+
     nationality: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -32,13 +47,6 @@ Staff.init(
       allowNull: false,
       validate: {
         isAlpha: true,
-      },
-    },
-    staff_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "roster",
-        key: "id",
       },
     },
   },

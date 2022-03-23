@@ -10,6 +10,14 @@ Player.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     national_team: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -69,13 +77,6 @@ Player.init(
     file_name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    player_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "roster",
-        key: "id",
-      },
     },
   },
   {
