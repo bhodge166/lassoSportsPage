@@ -1,7 +1,10 @@
 const router = require("express").Router();
 const rosterRoutes = require("./rosterRoutes");
-// const updateRoutes = require("./updateRoutes");
+const userRoutes = require("./userRoutes");
+const staffRoutes = require("./staffRoutes");
 
 router.use("/roster", rosterRoutes);
-// router.use("/update", updateRoutes);
+router.use("/user", userRoutes);
+router.use("/staff", staffRoutes);
+
 module.exports = router;
