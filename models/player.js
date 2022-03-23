@@ -66,8 +66,12 @@ Player.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    file_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     player_id: {
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       references: {
         model: "roster",
         key: "id",

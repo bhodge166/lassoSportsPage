@@ -1,22 +1,58 @@
-const { Gallery } = require("../models");
+const { Roster } = require("../models");
 
 const rosterData = [
   {
-    player_name: "Roy Kent",
-    national_team: "England",
-    position: "CM",
-    kit_number: 6,
-    date_of_birth: "July 6",
-    former_clubs: "Sunderland AFC, Chelsea F.C.",
-    games_played: 27,
-    starts: 27,
-    goals: 2,
-    shots_on_target: "11",
-    assists: 2,
-    passes_success_rate: 0.89,
-    yellow_cards: 2,
-    red_cards: 0,
-    tackle_success_rate: 0.62,
+    first_name: "Roy",
+    last_name: "Kent",
+  },
+
+  {
+    first_name: "Dani",
+    last_name: "Rojas",
+  },
+  {
+    first_name: "Jamie",
+    last_name: "Tartt",
+  },
+  {
+    first_name: "Isaac",
+    last_name: "McAdoo",
+  },
+  {
+    first_name: "Sam",
+    last_name: "Obisanya",
+  },
+  {
+    first_name: "Colin",
+    last_name: "Hughes",
+  },
+  {
+    first_name: "Jan",
+    last_name: "Maas",
+  },
+  {
+    first_name: "Richard",
+    last_name: "Montlaur",
+  },
+  {
+    first_name: "Thierry",
+    last_name: "Zoreaux",
+  },
+  {
+    first_name: "Rebecca",
+    last_name: "Welton",
+  },
+  {
+    first_name: "Tedd",
+    last_name: "Lasso",
+  },
+  {
+    first_name: "Coach",
+    last_name: "Beard",
+  },
+  {
+    first_name: "Nathan",
+    last_name: "Shelly",
   },
 ];
 
