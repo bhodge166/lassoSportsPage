@@ -35,7 +35,7 @@ Staff.init(
       },
     },
     staff_id: {
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       references: {
         model: "roster",
         key: "id",
