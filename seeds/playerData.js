@@ -2,7 +2,7 @@ const { Player } = require("../models");
 
 const playerData = [
   {
-    national_team: "England",
+    national_team: 'eng.png',
     position: "CM",
     kit_number: 6,
     date_of_birth: "July 6",
@@ -20,7 +20,7 @@ const playerData = [
     player_id: 1,
   },
   {
-    national_team: "Mexico",
+    national_team: 'mx.png',
     position: "ST",
     kit_number: 14,
     date_of_birth: "September 16",
@@ -38,7 +38,7 @@ const playerData = [
     player_id: 2,
   },
   {
-    national_team: "England",
+    national_team: 'eng.png',
     position: "ST",
     kit_number: 9,
     date_of_birth: "May 1",
@@ -56,7 +56,7 @@ const playerData = [
     player_id: 3,
   },
   {
-    national_team: "England",
+    national_team: 'eng.png',
     position: "CB",
     kit_number: 5,
     date_of_birth: "June 4",
@@ -74,7 +74,7 @@ const playerData = [
     player_id: 4,
   },
   {
-    national_team: "Nigeria",
+    national_team: 'ng.png',
     position: "RB",
     kit_number: 24,
     date_of_birth: "January 11",
@@ -92,7 +92,7 @@ const playerData = [
     player_id: 5,
   },
   {
-    national_team: "Wales",
+    national_team: 'wls.png',
     position: "LW",
     kit_number: 12,
     date_of_birth: "August 21",
@@ -110,7 +110,7 @@ const playerData = [
     player_id: 6,
   },
   {
-    national_team: "Netherlands",
+    national_team: 'nl.png',
     position: "CB",
     kit_number: 13,
     date_of_birth: "January 23",
@@ -128,7 +128,7 @@ const playerData = [
     player_id: 7,
   },
   {
-    national_team: "France",
+    national_team: 'fr.png',
     position: "CM",
     kit_number: 8,
     date_of_birth: "July 14",
@@ -146,7 +146,7 @@ const playerData = [
     player_id: 8,
   },
   {
-    national_team: "Canada",
+    national_team: 'ca.png',
     position: "GK",
     kit_number: 81,
     date_of_birth: "July 1",
