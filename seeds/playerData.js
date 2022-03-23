@@ -3,7 +3,7 @@ const { Players } = require('../models');
 const playerData = [
   {
     player_name: 'Roy Kent',
-    national_team: 'England',
+    national_team: 'eng.png',
     position: 'CM',
     kit_number: 6,
     date_of_birth: 'July 6',
@@ -21,7 +21,7 @@ const playerData = [
   },
   {
     player_name: 'Dani Rojas',
-    national_team: 'Mexico',
+    national_team: 'mx.png',
     position: 'ST',
     kit_number: 14,
     date_of_birth: 'September 16',
@@ -39,7 +39,7 @@ const playerData = [
   },
   {
     player_name: 'Jamie Tartt',
-    national_team: 'England',
+    national_team: 'eng.png',
     position: 'ST',
     kit_number: 9,
     date_of_birth: 'May 1',
@@ -57,7 +57,7 @@ const playerData = [
   },
   {
     player_name: 'Isaac McAdoo',
-    national_team: 'England',
+    national_team: 'eng.png',
     position: 'CB',
     kit_number: 5,
     date_of_birth: 'June 4',
@@ -75,7 +75,7 @@ const playerData = [
   },
   {
     player_name: 'Sam Obisanya',
-    national_team: 'Nigeria',
+    national_team: 'ng.png',
     position: 'RB',
     kit_number: 24,
     date_of_birth: 'January 11',
@@ -93,7 +93,7 @@ const playerData = [
   },
   {
     player_name: 'Colin Hughes',
-    national_team: 'Wales',
+    national_team: 'wls.png',
     position: 'LW',
     kit_number: 12,
     date_of_birth: 'August 21',
@@ -111,7 +111,7 @@ const playerData = [
   },
   {
     player_name: 'Jan Maas',
-    national_team: 'Netherlands',
+    national_team: 'nl.png',
     position: 'CB',
     kit_number: 13,
     date_of_birth: 'January 23',
@@ -129,7 +129,7 @@ const playerData = [
   },
   {
     player_name: 'Richard Montlaur',
-    national_team: 'France',
+    national_team: 'fr.png',
     position: 'CM',
     kit_number: 8,
     date_of_birth: 'July 14',
@@ -147,7 +147,7 @@ const playerData = [
   },
   {
     player_name: 'Thierry Zoreaux',
-    national_team: 'Canada',
+    national_team: 'ca.png',
     position: 'GK',
     kit_number: 81,
     date_of_birth: 'July 1',
