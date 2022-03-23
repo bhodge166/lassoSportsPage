@@ -1,5 +1,3 @@
-//still need to make login form
-
 const loginFormHandler = async (event) => {
   event.PreventDefault();
   //need these ID's to match
@@ -7,7 +5,7 @@ const loginFormHandler = async (event) => {
   const password = document.querySelector("#user-login").value.trim();
 
   if (email && password) {
-    const response = await fetch("/api/...", {
+    const response = await fetch("/api/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
@@ -30,14 +28,14 @@ const signupFormHandler = async (event) => {
 
   if (name && email && password) {
     //Need route
-    const response = await fetch("./models/user", {
+    const response = await fetch("/api/user", {
       method: "POST",
       body: JSON.stringify({ name, email, password }),
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
       //where do we want the user to go??
-      document.location.replace("...");
+      document.location.replace("/");
     } else {
       alert(response.statusText);
     }
