@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="./readmeimage.png" alt="tedlasso" width="200"></a>
+  <a href=""><img src="./public/images/readmeimage.png" alt="tedlasso" width="200"></a>
   <br>
   Team Ted Lasso
   <br>
@@ -28,9 +28,9 @@
   
 </p>
 
-![Project 2 image 1](./PROJECT%202%20WIREFRAME1.png)
+![Project 2 image 1](./public/images/PROJECT%202%20WIREFRAME1.png)
 
-![Project 2 image 2](./PROJECT%202%20WIREFRAME2.png)
+![Project 2 image 2](./public/images/PROJECT%202%20WIREFRAME2.png)
 
 ## Key Features
 

@@ -1,38 +1,102 @@
 const router = require("express").Router();
-const { Roster, Player, Staff } = require("../../models");
+const { Staff } = require("../../models");
 
-// find all roster route
+// find all staff route
 router.get("/", async (req, res) => {
   try {
-    const staffData = await Staff.findAll({
-      include: {
-        model: Roster,
-      },
-    });
+    const staffData = await Staff.findAll();
+    const allStaff = staffData.map((x) =>
+      x.get({ plain: true })
+    );
+    // res.render('/', {allStaff})
     res.status(200).json(staffData);
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-// find one player by its `id` value
+// find one staff by its `id` value
 router.get("/:id", async (req, res) => {
   try {
-    const staffData = await Staff.findByPk(req.params.id, {
-      include: {
-        model: Roster,
+    const staffData = await Staff.findByPk(req.params.id);
+
+    if (!staffData) {
+      res.status(404).json({ message: "No staff found with that id!" });
+      return;
+    }
+
+    const oneStaff = staffData.get({ plain: true });
+
+  // res.render('/', {oneStaff})
+  res.status(200).json(staffData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.post("/", async (req, res) => {
+  try {
+    const staffData = await Staff.create({
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      nationality: req.body.nationality,
+      occupation: req.body.occupation,
+      former_clubs: req.body.former_clubs
+    });
+    res.status(200).json(staffData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+router.put("/:id", async (req, res) => {
+  try {
+    const staffData = await Staff.update({
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+      nationality: req.body.nationality,
+      occupation: req.body.occupation,
+      former_clubs: req.body.former_clubs
+      },
+      {
+        where: {
+          id: req.params.id,
+        },
+      }
+    );
+
+    if (!staffData) {
+      res.status(404).json({ message: "No staff found with that id!" });
+      return;
+    }
+
+    // res.redirect('/');
+    res.status(200).json(staffData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.delete("/:id", async (req, res) => {
+  try {
+    const staffData = await Staff.destroy({
+      where: {
+        id: req.params.id,
       },
     });
 
     if (!staffData) {
-      res.status(404).json({ message: "No player found with that id!" });
+      res.status(404).json({ message: "No staff found with that id!" });
       return;
     }
 
+    // res.redirect('/');
     res.status(200).json(staffData);
+
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 module.exports = router;
+
