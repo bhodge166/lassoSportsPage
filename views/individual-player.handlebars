@@ -2,51 +2,51 @@
   <div class="row g-0">
     <div class="col-md-6">
       <img
-        src="/images/{{file_name}}"
+        src="/images/{{players.file_name}}"
         class="img-fluid rounded-start"
-        alt="Picture of {{first_name}} {{last_name}}"
+        alt="Picture of {{players.first_name}} {{players.last_name}}"
       />
     </div>
     <div class="col-md-6">
       <div class="card-body">
-        <h5 class="card-title">{{first_name}} {{last_name}}</h5>
+        <h5 class="card-title">{{players.first_name}} {{players.last_name}}</h5>
 
         <ul class="list-group">
           <li class="list-group-item">
             National Team:
-            <img src="/images/{{national_team}}" alt="National Team Flag" />
+            <img src="/images/{{players.national_team}}" alt="National Team Flag" />
           </li>
-          <li class="list-group-item">Position: {{position}}</li>
-          <li class="list-group-item">Kit Number: {{kit_number}}</li>
-          <li class="list-group-item">Born: {{date_of_birth}}</li>
+          <li class="list-group-item">Position: {{players.position}}</li>
+          <li class="list-group-item">Kit Number: {{players.kit_number}}</li>
+          <li class="list-group-item">Born: {{players.date_of_birth}}</li>
           <li class="list-group-item">
             Former Clubs:
-            {{former_clubs}}
+            {{players.former_clubs}}
           </li>
           <li class="list-group-item">
             Games Played:
-            {{games_played}}
+            {{players.games_played}}
           </li>
-          <li class="list-group-item">Starts: {{starts}}</li>
-          <li class="list-group-item">Goals: {{goals}}</li>
+          <li class="list-group-item">Starts: {{players.starts}}</li>
+          <li class="list-group-item">Goals: {{players.goals}}</li>
           <li class="list-group-item">
             Shots On Target:
-            {{shots_on_target}}
+            {{players.shots_on_target}}
           </li>
 
-          <li class="list-group-item">Assists: {{assists}}</li>
+          <li class="list-group-item">Assists: {{players.assists}}</li>
           <li class="list-group-item">
             Passes Success Rate:
-            {{passes_success_rate}}
+            {{players.passes_success_rate}}
           </li>
           <li class="list-group-item">
             Yellow Cards:
-            {{yellow_cards}}
+            {{players.yellow_cards}}
           </li>
-          <li class="list-group-item">Red Cards: {{red_cards}}</li>
+          <li class="list-group-item">Red Cards: {{players.red_cards}}</li>
           <li class="list-group-item">
             Tackle Success Rate:
-            {{tackle_success_rate}}
+            {{players.tackle_success_rate}}
           </li>
         </ul>
       </div>
