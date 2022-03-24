@@ -75,7 +75,7 @@ This software uses the following open source packages:
 - [handlebars v4.7.7](https://www.npmjs.com/package/handlebars)
 - [sequelize - v6.17.0](https://www.npmjs.com/package/sequelize)
 - [heroku - latest version](https://www.heroku.com)
-- [Cloudinary v1.29.0](https://www.npmjs.com/package/cloudinary#installation)
+- [jshint v2.13.4](https://www.npmjs.com/package/jshint)
 
 ## Authors
 
