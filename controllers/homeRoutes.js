@@ -23,10 +23,10 @@ router.get("/player/:id", async (req, res) => {
       return;
     }
 
-    const onePlayer = playerData.get({ plain: true });
+    const players = playerData.get({ plain: true });
 
-    // res.render('/', {onePlayer})
-    res.status(200).json(playerData);
+    res.render("individual-player", { players });
+    // res.status(200).json(playerData);
   } catch (err) {
     res.status(500).json(err);
   }
