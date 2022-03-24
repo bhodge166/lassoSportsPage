@@ -5,9 +5,13 @@
     alt="Image of {{first_name}} {{last_name}}"
   />
   <div class="card-body">
-    <h5 class="card-title">{{first_name}} {{last_name}}</h5>
+    <ul class="list-group">
+      <li class="card-title list-group-item">{{first_name}} {{last_name}}</li>
+      <li class="card-text list-group-item">National Team:
+        <img src="/images/{{national_team}}" /></li>
+      <li class="card-text list-group-item">Position: {{position}}</li>
 
-    <p class="card-text">National Team: <img src="/images/{{national_team}}" alt="National Team Flag" /> </p>
-    <p class="card-text">Position: {{position}}</p>
+    </ul>
+
   </div>
 </div>
