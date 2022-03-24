@@ -1,3 +1,29 @@
 {{#each players as |player|}}
 {{>player-details}}
 {{/each}}
+
+{{#if loggedIn}}
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="first name">First Name</label>
+      <input type="name" class="form-control" id="first_name" placeholder="First Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="last name">Last Name</label>
+      <input type="last name" class="form-control" id="last_name" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="kit number">Kit Number</label>
+      <input type="number" class="form-control" id="kit_number" placeholder="ex 47">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="dob">Date of Birth</label>
+      <input type="dob" class="form-control" id="date_of_birth" placeholder="ex July 1">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{{/if}}

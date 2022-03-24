@@ -1,0 +1,28 @@
+<div class="card mb-3" style="max-width: 900px">
+  <div class="row g-0">
+    <div class="col-md-6">
+      <img
+        src="/images/ted_lasso_staff.png"
+        class="img-fluid rounded-start"
+        alt="Picture of {{staff.first_name}} {{staff.last_name}}"
+      />
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5 class="card-title">{{staff.first_name}} {{staff.last_name}}</h5>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            Nationality:
+            <img src="/images/{{staff.nationality}}" alt="National Flag" />
+          </li>
+          <li class="list-group-item">Occupation: {{staff.occupation}}</li>
+          <li class="list-group-item">
+            Former Clubs:
+            {{staff.former_clubs}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
