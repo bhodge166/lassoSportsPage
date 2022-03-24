@@ -91,7 +91,7 @@ This design is put together by:
 
 [Jake Eissler](http://github.com/jakeeis24)
 
-[Kyle Henriksen](htttp://github.com/starbjornx)
+[Kyle Henriksen](http://github.com/starbjornx)
 
 [Peter Riggs](http://github.com/par92)
 
