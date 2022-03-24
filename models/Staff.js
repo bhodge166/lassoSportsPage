@@ -29,7 +29,8 @@ Staff.init(
 
     nationality: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+      defaultValue: "eng.png",
       validate: {
         isAlpha: true,
       },
@@ -44,7 +45,8 @@ Staff.init(
     },
     former_clubs: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
+      defaultValue: "na",
       validate: {
         isAlpha: true,
       },
