@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem">
+  <img src="{{file_name}}" class="card-img-top" alt="Image of {{name}}" />
+  <div class="card-body">
+    <h5 class="card-title">{{name}}</h5>
+    <p class="card-text">{{position}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Name: {{player_name}}</li>
+    <li class="list-group-item">Position: {{occupation}}</li>
+    <li class="list-group-item">National Team: {{national_team}}</li>
+  </ul>
+</div>
+
+<!-- i think this is where we add the #each section -->
+
+<!-- 
+
+{{#each players as |player| }}
+{{>player-details}}
+{{/each}}
+
+-->
