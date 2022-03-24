@@ -75,13 +75,15 @@ This software uses the following open source packages:
 - [Node.js](https://nodejs.org/)
 - [express v4.17.3](https://www.npmjs.com/package/express)
 - [mysql2 v2.3.3](https://www.npmjs.com/package/mysql2)
-- [bcrypt v5.0.1]
-- [connect-session-sequelize v7.1.2]
-- [dotenv v16.0.0]
-- [express-handlebars v6.0.3]
-- [express-session v1.17.2]
-- [handlebars v4.7.7]
-- [sequelize - v6.17.0]
+- [bcrypt v5.0.1](https://www.npmjs.com/package/bcrypt)
+- [connect-session-sequelize v7.1.2](https://www.npmjs.com/package/connect-session-sequelize)
+- [dotenv v16.0.0](https://www.npmjs.com/package/dotenv)
+- [express-handlebars v6.0.3](https://www.npmjs.com/package/express-handlebars)
+- [express-session v1.17.2](https://www.npmjs.com/package/express-session)
+- [handlebars v4.7.7](https://www.npmjs.com/package/handlebars)
+- [sequelize - v6.17.0](https://www.npmjs.com/package/sequelize)
+- [heroku - latest version](https://www.heroku.com)
+- [Cloudinary v1.29.0](https://www.npmjs.com/package/cloudinary#installation)
 
 ## Authors
 
