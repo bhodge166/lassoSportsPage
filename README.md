@@ -34,15 +34,7 @@
 
 ## Key Features
 
--Logged-In see player roster.
-
--Logged-Out see just main website details and learn how to sign up.
-
--Members get to preview special data
-
--Players are able to upload their information
-
--Staff are able to update stats of players
+-Admin will be able to update player details and stats.
 
 ## How To Use
 
