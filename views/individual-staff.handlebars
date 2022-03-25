@@ -1,23 +1,39 @@
 <div class="card mb-3" style="max-width: 900px">
   <div class="row g-0">
-    <div class="col-md-6">
+    <div class="col-md-6 mt-3">
       <img
-        src="/images/ted_lasso_staff.png"
-        class="img-fluid rounded-start"
+        src="/images/{{staff.file_name}}"
+        class="img-fluid rounded border border-5 border-danger mb-5"
         alt="Picture of {{staff.first_name}} {{staff.last_name}}"
       />
     </div>
     <div class="col-md-6">
       <div class="card-body">
-        <h5 class="card-title">{{staff.first_name}} {{staff.last_name}}</h5>
+        <h5
+          class="card-title fs-1"
+          style="font-family: Passion One; color:red;"
+        >{{staff.first_name}} {{staff.last_name}}</h5>
 
         <ul class="list-group">
-          <li class="list-group-item">
+          <li
+            class="list-group-item bg-primary"
+            style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >
             Nationality:
-            <img src="/images/{{staff.nationality}}" alt="National Flag" />
+            <img
+              src="/images/{{staff.nationality}}"
+              class="ms-5"
+              alt="National Flag"
+            />
           </li>
-          <li class="list-group-item">Occupation: {{staff.occupation}}</li>
-          <li class="list-group-item">
+          <li
+            class="list-group-item bg-primary mt-2"
+            style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >Occupation: {{staff.occupation}}</li>
+          <li
+            class="list-group-item bg-primary mt-2"
+            style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >
             Former Clubs:
             {{staff.former_clubs}}
           </li>

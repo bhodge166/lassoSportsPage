@@ -1,3 +1,6 @@
+<html>
+<body style= "backgrond-color: red;">
+
 <h1 align="center">
   <br>
   <a href=""><img src="./public/images/readmeimage.png" alt="tedlasso" width="200"></a>
@@ -81,16 +84,42 @@ This software uses the following open source packages:
 
 This design is put together by:
 
+<div style = "display: flex; flex-wrap: wrap">
+
+<div>
+<img style= "width: 120px; border-radius:255px; position: relative; right: 25px;padding: 15px" src = "https://avatars.githubusercontent.com/u/97546861?v=4">
+
 [Jake Eissler](http://github.com/jakeeis24)
+
+</div>
+
+<div>
+<img style = "width: 120px; border-radius:255px; position: relative; right: 25px;padding: 15px" src="https://avatars.githubusercontent.com/u/97247627?v=4">
 
 [Kyle Henriksen](http://github.com/starbjornx)
 
+</div>
+
+<div>
+<img style= "width: 120px; border-radius:255px; position: relative; right: 25px;padding: 15px" src="https://avatars.githubusercontent.com/u/97469705?v=4">
+
 [Peter Riggs](http://github.com/par92)
 
+</div>
+
+<div>
+<img style= "width: 120px; border-radius:255px; position: relative; right: 25px;padding: 15px" src="https://avatars.githubusercontent.com/u/97480322?v=4">
+
 [Brad Hodge](http://github.com/bhodge166)
+
+</div>
+</div>
 
 # Extra
 
 ## License
 
 ## MIT
+
+</body>
+</html>
