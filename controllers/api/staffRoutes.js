@@ -40,6 +40,7 @@ router.post("/", async (req, res) => {
       nationality: req.body.nationality,
       occupation: req.body.occupation,
       former_clubs: req.body.former_clubs,
+      file_name: req.body.file_name,
     });
     res.status(200).json(staffData);
   } catch (err) {
