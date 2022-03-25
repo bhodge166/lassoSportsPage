@@ -1,3 +1,4 @@
+<html>
 <body style= "backgrond-color: red;">
 
 <h1 align="center">
@@ -121,3 +122,4 @@ This design is put together by:
 ## MIT
 
 </body>
+</html>
