@@ -1,15 +1,28 @@
 <div class="card mx-2 my-2" style="width: 18rem">
   <a href="/player/{{id}}"><img
       src="/images/{{file_name}}"
-      class="card-img-top"
+      class="card-img-top rounded mt-2"
       alt="Image of {{first_name}} {{last_name}}"
     /></a>
   <div class="card-body">
     <ul class="list-group">
-      <li class="card-title list-group-item">{{first_name}} {{last_name}}</li>
-      <li class="card-text list-group-item">National Team:
-        <img src="/images/{{national_team}}" /></li>
-      <li class="card-text list-group-item">Position: {{position}}</li>
+      <li
+        class="card-title list-group-item"
+        style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+      >Player Name: {{first_name}} {{last_name}}</li>
+      <li
+        class="card-text list-group-item"
+        style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+      >National Team:
+        <img
+          src="/images/{{national_team}}"
+          class="ms-3"
+          alt="national image"
+        /></li>
+      <li
+        class="card-text list-group-item mt-2"
+        style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+      >Position: {{position}}</li>
 
     </ul>
 
