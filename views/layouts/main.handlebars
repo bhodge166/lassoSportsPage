@@ -78,17 +78,26 @@
         <li class="nav-item ms-3" style="width: 250px;">
           <a
             class="nav-link"
-            href="#"
+            href="/api/staff"
             style="font-family: Passion One; color: yellow;background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
           >Staff</a>
         </li>
+        {{!-- {{#if loggedIn}}
+        <button class="nav-item ms-3" style="width: 250px;">
+          <a
+            class="nav-link"
+            style="font-family: Passion One; color: yellow;background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >Logout</a>
+        </button>
+        {{else}} --}}
         <li class="nav-item ms-3" style="width: 250px;">
           <a
             class="nav-link"
-            href="#"
+            href="/login"
             style="font-family: Passion One; color: yellow;background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
           >Admin Login</a>
         </li>
+        {{!-- {{/if}} --}}
       </ul>
     </div>
     <main class="container container-fluid mt-5">
@@ -104,5 +113,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
   </body>
 </html>

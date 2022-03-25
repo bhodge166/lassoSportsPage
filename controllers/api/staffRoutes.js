@@ -5,11 +5,9 @@ const { Staff } = require("../../models");
 router.get("/", async (req, res) => {
   try {
     const staffData = await Staff.findAll();
-    const allStaff = staffData.map((x) =>
-      x.get({ plain: true })
-    );
-    // res.render('/', {allStaff})
-    res.status(200).json(staffData);
+    const staffs = staffData.map((x) => x.get({ plain: true }));
+    res.render("staff", { staffs });
+    // res.status(200).json(staffData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -25,10 +23,10 @@ router.get("/:id", async (req, res) => {
       return;
     }
 
-    const oneStaff = staffData.get({ plain: true });
+    const staff = staffData.get({ plain: true });
 
-  // res.render('/', {oneStaff})
-  res.status(200).json(staffData);
+    res.render("individual-staff", { staff });
+    // res.status(200).json(staffData);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -41,9 +39,10 @@ router.post("/", async (req, res) => {
       last_name: req.body.last_name,
       nationality: req.body.nationality,
       occupation: req.body.occupation,
-      former_clubs: req.body.former_clubs
+      former_clubs: req.body.former_clubs,
     });
-    res.status(200).json(staffData);
+    res.redirect("staff");
+    // res.status(200).json(staffData);
   } catch (err) {
     res.status(400).json(err);
   }
@@ -51,12 +50,13 @@ router.post("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
-    const staffData = await Staff.update({
-      first_name: req.body.first_name,
-      last_name: req.body.last_name,
-      nationality: req.body.nationality,
-      occupation: req.body.occupation,
-      former_clubs: req.body.former_clubs
+    const staffData = await Staff.update(
+      {
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
+        nationality: req.body.nationality,
+        occupation: req.body.occupation,
+        former_clubs: req.body.former_clubs,
       },
       {
         where: {
@@ -92,11 +92,9 @@ router.delete("/:id", async (req, res) => {
 
     // res.redirect('/');
     res.status(200).json(staffData);
-
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
 module.exports = router;
-
