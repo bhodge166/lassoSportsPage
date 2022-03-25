@@ -104,186 +104,204 @@
 </div>
 
 {{#if loggedIn}}
-  <div>
-    <h2>Update Player</h2>
-    <form class = "update-form">
+  <div
+    class="container"
+    style="background-color: red; border-radius: 10px; width: 98%; font-family: Passion One;"
+  >
+    <h2 style="color: yellow;">Update Player Fields Below</h2>
+    <form class="update-form">
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="first name">First Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="first name"></label>
           <input
             type="name"
             class="form-control"
             id="first_name"
-            placeholder="First Name"
+            placeholder="First Name..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="last name">Last Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="last name"></label>
           <input
             type="last name"
             class="form-control"
             id="last_name"
-            placeholder="Last Name"
+            placeholder="Last Name..."
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="kit number">Kit Number</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="kit number"></label>
           <input
             type="number"
             class="form-control"
             id="kit_number"
-            placeholder="ex 47"
+            placeholder="Kit Number... ex 47"
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="dob">Date of Birth</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="dob"></label>
           <input
             type="dob"
             class="form-control"
             id="date_of_birth"
-            placeholder="ex July 1"
+            placeholder="Birth Date... ex July 1"
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="national team">National Team</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="national team"></label>
           <input
             type="name"
             class="form-control"
             id="national_team"
-            placeholder="ex eng.png"
+            placeholder="National Team Flag...ex eng.png"
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="position">Position</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="position"></label>
           <input
             type="position"
             class="form-control"
             id="position"
-            placeholder="position"
+            placeholder="Position..."
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="former club">Former clubs</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="former club"></label>
           <input
             type="former clubs"
             class="form-control"
             id="former_clubs"
-            placeholder="former clubs"
+            placeholder="Former Clubs..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="games played">Games Played</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="games played"></label>
           <input
             type="dob"
             class="form-control"
             id="games_played"
-            placeholder="ex 14"
+            placeholder="Games Played..."
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="starts">Starts</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="starts"></label>
           <input
             type="starts"
             class="form-control"
             id="starts"
-            placeholder="ex 14"
+            placeholder="Number of starts..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="goals">Goals</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="goals"></label>
           <input
             type="dob"
             class="form-control"
             id="goals"
-            placeholder="ex 14"
+            placeholder="Number of Goals"
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="shots">Shots on Target</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="shots"></label>
           <input
             type="shots on target"
             class="form-control"
             id="shots_on_target"
-            placeholder="ex 14"
+            placeholder="Number of Shots"
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="assists">Assists</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="assists"></label>
           <input
             type="dob"
             class="form-control"
             id="assists"
-            placeholder="ex 14"
+            placeholder="Number of Assists"
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="passes">Passes Success Rate</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="passes"></label>
           <input
             type="starts"
             class="form-control"
             id="passes_success_rate"
-            placeholder="ex 100"
+            placeholder="Pass Success Rate"
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="yellow">Yellow Cards</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="yellow"></label>
           <input
             type="dob"
             class="form-control"
             id="yellow_cards"
-            placeholder="ex 14"
+            placeholder="Number of Yellow Cards"
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="red">Red Cards</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="red"></label>
           <input
             type="red"
             class="form-control"
             id="red_cards"
-            placeholder="ex 14"
+            placeholder="Number of Red Cards"
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="tackle">Tackle Success Rate</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="tackle"></label>
           <input
             type="tackle"
             class="form-control"
             id="tackle_success_rate"
-            placeholder="ex 100"
+            placeholder="Tackle Success Rate..."
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="file">File Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="file"></label>
           <input
             type="string"
             class="form-control"
             id="file_name"
-            placeholder="ex silhouette.png"
+            placeholder="Player Image Link"
           />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" players-id="{{players.id}}">Submit</button>
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="background-color: #1534d6;
+        margin-left:0.5rem"
+        players-id="{{players.id}}"
+      >Submit</button>
     </form>
   </div>
-  <div>
-    <h2>Delete Player</h2>
-    <button type="submit" class="btn btn-primary" player-id="{{players.id}}" id="delete">Delete Player</button>
+  <div
+    class="container my-2"
+    style="background: red; border-radius: 10px ; width: 98%; font-family: Passion One; "
+  >
+    <h2 style="color: yellow;">Or Click this Button to Delete the Player</h2>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      player-id="{{players.id}}"
+      id="delete"
+      style="background-color: #1534d6; margin-bottom: 1rem"
+    >Delete Player</button>
   </div>
   <script src="../js/updateDeletePlayer.js"></script>
 {{/if}}
