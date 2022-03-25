@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Staff extends Model { }
+class Staff extends Model {}
 
 Staff.init(
   {
@@ -31,9 +31,6 @@ Staff.init(
       type: DataTypes.STRING,
       allowNull: true,
       defaultValue: "eng.png",
-      validate: {
-        isAlpha: true,
-      },
     },
 
     occupation: {
@@ -50,14 +47,12 @@ Staff.init(
       validate: {
         isAlpha: true,
       },
-
     },
     file_name: {
       type: DataTypes.STRING,
       allowNull: true,
       defaultValue: "ted_lasso_staff.png",
     },
-
   },
   {
     sequelize,
