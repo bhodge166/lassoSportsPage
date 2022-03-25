@@ -53,3 +53,102 @@
     </div>
   </div>
 </div>
+
+{{#if loggedIn}}
+<div>
+<h2>Update Player</h2>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="first name">First Name</label>
+      <input type="name" class="form-control" id="first_name" placeholder="First Name">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="last name">Last Name</label>
+      <input type="last name" class="form-control" id="last_name" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="kit number">Kit Number</label>
+      <input type="number" class="form-control" id="kit_number" placeholder="ex 47">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="dob">Date of Birth</label>
+      <input type="dob" class="form-control" id="date_of_birth" placeholder="ex July 1">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="national team">National Team</label>
+      <input type="name" class="form-control" id="national_team" placeholder="ex eng.png">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="position">Position</label>
+      <input type="position" class="form-control" id="position" placeholder="position">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="former club">Former clubs</label>
+      <input type="former clubs" class="form-control" id="former_clubs" placeholder="former clubs">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="games played">Games Played</label>
+      <input type="dob" class="form-control" id="games_played" placeholder="ex 14">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="starts">Starts</label>
+      <input type="starts" class="form-control" id="starts" placeholder="ex 14">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="goals">Goals</label>
+      <input type="dob" class="form-control" id="goals" placeholder="ex 14">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="shots">Shots on Target</label>
+      <input type="shots on target" class="form-control" id="shots_on_target" placeholder="ex 14">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="assists">Assists</label>
+      <input type="dob" class="form-control" id="assists" placeholder="ex 14">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="passes">Passes Success Rate</label>
+      <input type="starts" class="form-control" id="passes_success_rate" placeholder="ex 100">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="yellow">Yellow Cards</label>
+      <input type="dob" class="form-control" id="yellow_cards" placeholder="ex 14">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="red">Red Cards</label>
+      <input type="red" class="form-control" id="red_cards" placeholder="ex 14">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="tackle">Tackle Success Rate</label>
+      <input type="tackle" class="form-control" id="tackle_success_rate" placeholder="ex 100">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="file">File Name</label>
+      <input type="string" class="form-control" id="file_name" placeholder="ex silhouette.png">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<div>
+  <h2>Delete Player</h2>
+  <button type="submit" class="btn btn-primary" id="delete">Delete Player</button>
+</div>
+{{/if}}

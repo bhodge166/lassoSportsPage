@@ -6,7 +6,7 @@ router.get("/", async (req, res) => {
   try {
     const staffData = await Staff.findAll();
     const staffs = staffData.map((x) => x.get({ plain: true }));
-    res.render("staff", { staffs });
+    res.render("staff", { staffs, loggedIn: req.session.loggedIn });
     // res.status(200).json(staffData);
   } catch (err) {
     res.status(500).json(err);
@@ -25,7 +25,7 @@ router.get("/:id", async (req, res) => {
 
     const staff = staffData.get({ plain: true });
 
-    res.render("individual-staff", { staff });
+    res.render("individual-staff", { staff, loggedIn: req.session.loggedIn });
     // res.status(200).json(staffData);
   } catch (err) {
     res.status(500).json(err);
@@ -41,8 +41,7 @@ router.post("/", async (req, res) => {
       occupation: req.body.occupation,
       former_clubs: req.body.former_clubs,
     });
-    res.redirect("staff");
-    // res.status(200).json(staffData);
+    res.status(200).json(staffData);
   } catch (err) {
     res.status(400).json(err);
   }
