@@ -6,7 +6,7 @@ router.get("/", async (req, res) => {
   try {
     const playerData = await Player.findAll();
     const players = playerData.map((x) => x.get({ plain: true }));
-    res.render("homepage", { players });
+    res.render("homepage", { players, loggedIn: req.session.loggedIn });
     // res.status(200).json(playerData);
   } catch (err) {
     res.status(500).json(err);
@@ -25,7 +25,10 @@ router.get("/player/:id", async (req, res) => {
 
     const players = playerData.get({ plain: true });
 
-    res.render("individual-player", { players });
+    res.render("individual-player", {
+      players,
+      loggedIn: req.session.loggedIn,
+    });
     // res.status(200).json(playerData);
   } catch (err) {
     res.status(500).json(err);
