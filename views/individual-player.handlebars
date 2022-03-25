@@ -106,7 +106,7 @@
 {{#if loggedIn}}
   <div>
     <h2>Update Player</h2>
-    <form>
+    <form class = "update-form">
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="first name">First Name</label>
@@ -278,11 +278,12 @@
           />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" players-id="{{players.id}}">Submit</button>
     </form>
   </div>
   <div>
     <h2>Delete Player</h2>
-    <button type="submit" class="btn btn-primary" id="delete">Delete Player</button>
+    <button type="submit" class="btn btn-primary" player-id="{{players.id}}" id="delete">Delete Player</button>
   </div>
+  <script src="../js/updateDeletePlayer.js"></script>
 {{/if}}
