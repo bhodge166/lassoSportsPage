@@ -1,13 +1,57 @@
-<div class="card mx-2 my-2" style="width: 18rem">
+{{!-- <div class="card mx-2 my-2" style="width: 18rem">
   <a href="/api/staff/{{id}}"><img
-    src="/images/ted_lasso_staff.png"
-    class="card-img-top"
-    alt="Image of {{first_name}} {{last_name}}"
-  /></a>
+      src="/images/ted_lasso_staff.png"
+      class="card-img-top"
+      alt="Image of {{first_name}} {{last_name}}"
+    /></a>
   <div class="card-body">
-    <h5 class="card-title">{{first_name}} {{last_name}}</h5>
+    <h5
+      class="card-title"
+      style="font-family: Passion One; color:red;"
+    >{{first_name}} {{last_name}}</h5>
 
-    <p class="card-text">Nationality: {{nationality}}</p>
-    <p class="card-text">Title: {{occupation}}</p>
+    <p class="card-text" style="font-family: Passion One;">Nationality:
+      {{nationality}}</p>
+    <p class="card-text" style="font-family: Passion One;">Title:
+      {{occupation}}</p>
+  </div>
+</div> --}}
+
+<div class="card mb-3" style="max-width: 900px">
+  <div class="row g-0">
+    <div class="col-md-6 mt-3 mb-3">
+      <a href="/api/staff/{{id}}"><img
+          src="/images/{{file_name}}"
+          class="card-img-top"
+          alt="Image of {{first_name}} {{last_name}}"
+        /></a>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <h5
+          class="card-title fs-1"
+          style="font-family: Passion One; color:red;"
+        >{{first_name}} {{last_name}}</h5>
+
+        <ul class="list-group">
+          <li
+            class="list-group-item bg-primary"
+            style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >
+            Nationality:
+            <img
+              src="/images/{{nationality}}"
+              class="ms-5"
+              alt="National Flag"
+            />
+          </li>
+          <li
+            class="list-group-item bg-primary mt-2"
+            style="font-family: Passion One; color: yellow; background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
+          >Title: {{occupation}}</li>
+
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
