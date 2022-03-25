@@ -3,31 +3,32 @@
 {{/each}}
 
 {{#if loggedIn}}
-<div>
-<h2>Add a Player</h2>
-<form class = "add-player">
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="first name">First Name</label>
-      <input type="name" class="form-control" id="first_name" placeholder="First Name">
+<div class="container" style="background: red; border-radius: 10px; width: 98%; font-family: Passion One;">
+  <h2 style ="font family: Passion One; color: yellow">Add a Player</h2>
+  <p style ="font family: Passion One; color: yellow">Start with a few basic details:</p>
+  <form class = "add-player">
+    <div class="form-row">
+      <div class="form-group col-md-4" style="padding-bottom: 5px;">
+        <label for="first name"></label>
+        <input type="name" class="form-control" id="first_name" placeholder="First Name...">
+      </div>
+      <div class="form-group col-md-4" style="padding-bottom: 5px;">
+        <label for="last name"></label>
+        <input type="last name" class="form-control" id="last_name" placeholder="Last Name...">
+      </div>
     </div>
-    <div class="form-group col-md-4">
-      <label for="last name">Last Name</label>
-      <input type="last name" class="form-control" id="last_name" placeholder="Last Name">
+    <div class="form-row">
+      <div class="form-group col-md-4" style="padding-bottom: 5px;">
+        <label for="kit number"></label>
+        <input type="number" class="form-control" id="kit_number" placeholder="Kit number... ex: 47">
+      </div>
+      <div class="form-group col-md-4" style="padding-bottom: 5px;">
+        <label for="dob"></label>
+        <input type="dob" class="form-control" id="date_of_birth" placeholder="Birth date... ex: July 1">
+      </div>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="kit number">Kit Number</label>
-      <input type="number" class="form-control" id="kit_number" placeholder="ex 47">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="dob">Date of Birth</label>
-      <input type="dob" class="form-control" id="date_of_birth" placeholder="ex July 1">
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <button type="submit" class="btn btn-primary" style="background: #1534d6;">Submit</button>
+  </form>
 </div>
 <script src ="./js/addPlayer.js"></script>
 {{/if}}
