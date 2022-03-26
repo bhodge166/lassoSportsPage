@@ -51,23 +51,17 @@ router.post("/", async (req, res) => {
 router.put("/:id", async (req, res) => {
   try {
     const updateFields = {};
-    Object.entries(req.body)
-      .forEach(([key, value]) => {
-          if (value) {
-              updateFields[key] = value
-            }
-    });
-    console.log(updateFields);
-    console.log(req.body);
-
-    const staffData = await Staff.update(
-      updateFields,
-      {
-        where: {
-          id: req.params.id,
-        },
+    Object.entries(req.body).forEach(([key, value]) => {
+      if (value) {
+        updateFields[key] = value;
       }
-    );
+    });
+
+    const staffData = await Staff.update(updateFields, {
+      where: {
+        id: req.params.id,
+      },
+    });
 
     if (!staffData) {
       res.status(404).json({ message: "No staff found with that id!" });

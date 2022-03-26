@@ -44,74 +44,78 @@
 </div>
 
 {{#if loggedIn}}
-  <div>
-    <h2>Update Staff</h2>
+  <div class="container"
+    style="background-color: red; border-radius: 10px; width: 98%; font-family: Passion One;">
+    <h2 style="color: yellow;">Update Staff</h2>
     <form class = "update-form">
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="first name">First Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="first name"></label>
           <input
             type="name"
             class="form-control"
             id="first_name"
-            placeholder="First Name"
+            placeholder="First Name..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="last name">Last Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="last name"></label>
           <input
             type="last name"
             class="form-control"
             id="last_name"
-            placeholder="Last Name"
+            placeholder="Last Name..."
           />
         </div>
       </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="nationality">Nationality</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="nationality"></label>
           <input
             type="string"
             class="form-control"
             id="nationality"
-            placeholder="nationality"
+            placeholder="Nationality..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="occupation">Occupation</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="occupation"></label>
           <input
             type="string"
             class="form-control"
             id="occupation"
-            placeholder="occupation"
+            placeholder="Occupation..."
           />
         </div>
-        <div class="form-group col-md-4">
-          <label for="occupation">Former Clubs</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="occupation"></label>
           <input
             type="string"
             class="form-control"
             id="former_clubs"
-            placeholder="former clubs"
+            placeholder="Former Clubs..."
           />
         </div>
+      </div>
       <div class="form-row">
-        <div class="form-group col-md-4">
-          <label for="file">File Name</label>
+        <div class="form-group col-md-4 p-2">
+          <label for="file"></label>
           <input
             type="string"
             class="form-control"
             id="file_name"
-            placeholder="ex silhouette.png"
+            placeholder="Player Image Link"
           />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary" staffs-id="{{staff.id}}">Submit</button>
+      <button type="submit" class="btn btn-primary" style="background-color: #1534d6;
+        margin-left:0.5rem" staffs-id="{{staff.id}}">Submit</button>
     </form>
   </div>
-  <div>
-    <h2>Delete Staff</h2>
-    <button type="submit" class="btn btn-primary" staff-id="{{staff.id}}" id="delete">Delete Staff</button>
+  <div class="container my-2"
+    style="background: red; border-radius: 10px ; width: 98%; font-family: Passion One; ">
+    <h2 style="color: yellow;">Or Click this Button to Delete the Staff</h2>
+    <button type="submit" class="btn btn-primary"  staff-id="{{staff.id}}" id="delete" style="background-color: #1534d6; margin-bottom: 1rem">Delete Staff</button>
   </div>
   <script src="../../js/updateDeleteStaff.js"></script>
 {{/if}}
