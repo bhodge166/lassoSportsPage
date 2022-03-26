@@ -33,6 +33,7 @@ const staffData = [
     former_clubs: "n/a",
     file_name: "nathan_shelly.png",
   },
+
 ];
 
 const seedStaff = () => Staff.bulkCreate(staffData);

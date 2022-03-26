@@ -32,7 +32,7 @@
       rel="stylesheet"
     />
 
-    <title>Team Lasso</title>
+    <title>AFC Richmond Team Roster</title>
 
   </head>
   <body
@@ -51,7 +51,7 @@
           <div
             class="mask"
             style="background-color: rgba(0, 0, 0, 0); height: 30rem;"
-          >
+          ><a href="http://www.google.com"
             <h1
               class="mb-3 fw-4 text-decoration-underline"
               style="font-family: Passion One; font-size: 5vw; color: red"
@@ -64,13 +64,8 @@
                 src="https://preview.redd.it/ncvcfof1yqd71.png?width=640&crop=smart&auto=webp&s=413a1764d029aa049d0a6599d92b6b8f5fdaa3b6"
                 style="padding: 1vw;  width: 20vw;"
                 alt="imagelogo"
-              /></h1>
-            <p
-              class="mb-3 fs-3 text-decoration-underline"
-              style="font-family: Passion One;color: yellow"
-            >
-              A Premier League Football Club
-            </p>
+              /></h1></a>
+            
 
           </div>
         </div>
@@ -101,6 +96,7 @@
             <li class="nav-item ms-3 mb-1" style="width: 250px;">
               <a
                 class="nav-link"
+                id="logout"
                 style="font-family: Passion One; color: yellow;background-image: linear-gradient(to bottom right, rgb(41, 4, 163) , rgb(12, 72, 236));"
               >Logout</a>
             </li>
@@ -130,8 +126,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    {{!-- {{#if loggedIn}}
+    {{#if loggedIn}}
     <script src="/js/logout.js"></script>
-    {{/if}} --}}
+    {{/if}}
   </body>
 </html>
