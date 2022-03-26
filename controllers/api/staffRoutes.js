@@ -50,14 +50,18 @@ router.post("/", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
+    const updateFields = {};
+    Object.entries(req.body)
+      .forEach(([key, value]) => {
+          if (value) {
+              updateFields[key] = value
+            }
+    });
+    console.log(updateFields);
+    console.log(req.body);
+
     const staffData = await Staff.update(
-      {
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        nationality: req.body.nationality,
-        occupation: req.body.occupation,
-        former_clubs: req.body.former_clubs,
-      },
+      updateFields,
       {
         where: {
           id: req.params.id,

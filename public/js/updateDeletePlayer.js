@@ -14,18 +14,12 @@ const updatePlayer = async (event) => {
     const games_played = document.querySelector("#games_played").value.trim();
     const starts = document.querySelector("#starts").value.trim();
     const goals = document.querySelector("#goals").value.trim();
-    const shots_on_target = document
-      .querySelector("#shots_on_target")
-      .value.trim();
+    const shots_on_target = document.querySelector("#shots_on_target").value.trim();
     const assists = document.querySelector("#assists").value.trim();
-    const passes_success_rate = document
-      .querySelector("#passes_success_rate")
-      .value.trim();
+    const passes_success_rate = document.querySelector("#passes_success_rate").value.trim();
     const yellow_cards = document.querySelector("#yellow_cards").value.trim();
     const red_cards = document.querySelector("#red_cards").value.trim();
-    const tackle_success_rate = document
-      .querySelector("#tackle_success_rate")
-      .value.trim();
+    const tackle_success_rate = document.querySelector("#tackle_success_rate").value.trim();
 
     const file_name = document.querySelector("#file_name").value.trim();
 
@@ -57,9 +51,10 @@ const updatePlayer = async (event) => {
     });
 
     if (response.ok) {
-      document.location.reload();
+      document.location.replace(`/player/${id}`);
     } else {
       alert("Failed to update player");
+      console.log(kit_number);
     }
   }
 };
