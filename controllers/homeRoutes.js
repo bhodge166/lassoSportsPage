@@ -64,16 +64,12 @@ router.post("/", async (req, res) => {
 
 router.put("/player/:id", async (req, res) => {
   try {
-    
     const updateFields = {};
-    Object.entries(req.body)
-      .forEach(([key, value]) => {
-          if (value) {
-              updateFields[key] = value
-            }
+    Object.entries(req.body).forEach(([key, value]) => {
+      if (value) {
+        updateFields[key] = value;
+      }
     });
-    console.log(updateFields);
-    console.log(req.body);
 
     const playerData = await Player.update(
       updateFields,

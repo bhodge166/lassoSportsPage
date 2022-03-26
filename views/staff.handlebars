@@ -3,26 +3,26 @@
 {{/each}}
 
 {{#if loggedIn}}
-<div>
-<h2>Add Staff</h2>
+<div class="container" style="background: red; border-radius: 10px ; width: 98%; font-family: Passion One;">
+<h2 style ="font family: Passion One; color: yellow">Add Staff</h2>
 <form class = "add-staff">
   <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="first name">First Name</label>
-      <input type="name" class="form-control" id="first_name" placeholder="First Name">
+    <div class="form-group col-md-4" style="padding-bottom: 5px;">
+      <label for="first name"></label>
+      <input type="name" class="form-control" id="first_name" placeholder="First Name...">
     </div>
-    <div class="form-group col-md-4">
-      <label for="last name">Last Name</label>
-      <input type="last name" class="form-control" id="last_name" placeholder="Last Name">
+    <div class="form-group col-md-4" style="padding-bottom: 5px;">
+      <label for="last name"></label>
+      <input type="last name" class="form-control" id="last_name" placeholder="Last Name...">
     </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="occupation">Occupation</label>
-      <input type="string" class="form-control" id="occupation" placeholder="occupation">
+    <div class="form-group col-md-4" style="padding-bottom: 5px;">
+      <label for="occupation"></label>
+      <input type="string" class="form-control" id="occupation" placeholder="Occupation...">
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" style="background: #1534d6;">Submit</button>
 </form>
 </div>
 <script src ="../js/addStaff.js"></script>
