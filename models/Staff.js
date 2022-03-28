@@ -36,9 +36,6 @@ Staff.init(
     occupation: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isAlpha: true,
-      },
     },
     former_clubs: {
       type: DataTypes.STRING,
